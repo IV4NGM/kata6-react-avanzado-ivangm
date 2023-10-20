@@ -1,4 +1,4 @@
-// import logo from '../assets/react.svg'
+import logo from '../../assets/react.svg'
 import { useState } from "react"
 
 const SimpleForm = () => {
@@ -14,9 +14,9 @@ const SimpleForm = () => {
   return (
     <div className='login'>
       <div className='login-container'>
-        {/* <img src={logo} alt='logo' /> */}
+        <img src={logo} alt='logo' />
         
-        <form onSubmit={() => {}/* HANDLE SUBMIT */}>
+        <form onSubmit={handleSubmit}>
           <label htmlFor='email'>Email</label>
           <input
             type='text'
@@ -36,7 +36,7 @@ const SimpleForm = () => {
             value={password}
           />
           
-          <button onClick={handleSubmit} type='submit'>
+          <button type='submit'>
             Iniciar Sesion
           </button>
           

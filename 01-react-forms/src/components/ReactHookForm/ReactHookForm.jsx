@@ -1,4 +1,4 @@
-// import logo from '../assets/react.svg'
+import logo from '../../assets/react.svg'
 import { useForm } from 'react-hook-form'
 import { yupResolver } from '@hookform/resolvers/yup';
 import * as yup from "yup";
@@ -25,7 +25,7 @@ const ReactHookForm = () => {
   return (
     <div className='login'>
       <div className='login-container'>
-        {/* <img src={logo} alt='logo' /> */}
+        <img src={logo} alt='logo' />
         <form
           onSubmit={handleSubmit(onSubmit)}
           style={{ display: 'flex', flexDirection: 'column' }}
