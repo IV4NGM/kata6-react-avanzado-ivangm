@@ -1,5 +1,3 @@
-import React from 'react'
-
 function ChildComponent({ ParentCallback }) {
   ParentCallback('Hola desde ChildComponent')
   return (
