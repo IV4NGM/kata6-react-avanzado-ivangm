@@ -6,6 +6,7 @@ const SongContext = createContext()
 const SongProvider = ({ children }) => {
   const [list, setList] = useState([])
   const [loading, setLoading] = useState(true)
+  const [selectedSong, setSelectedSong] = useState({})
 
   useEffect(() => {
     setTimeout(() => {
@@ -16,7 +17,9 @@ const SongProvider = ({ children }) => {
 
   const data = {
     list,
-    loading
+    loading,
+    selectedSong,
+    setSelectedSong
   }
 
   return (

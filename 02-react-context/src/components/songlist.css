@@ -13,3 +13,7 @@
 .row-song p, .row-song h4{
   margin: 0;
 }
+
+.row-song:hover{
+  cursor: pointer;
+}
